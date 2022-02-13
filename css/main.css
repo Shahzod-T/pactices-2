@@ -1,0 +1,73 @@
+body{
+    background: var(--body_bg_color);
+}
+
+:root {
+    --body_bg_color:#F2F2F2;
+    --main_bg_color:#fff;
+    --color:#000;
+}
+
+.dark {
+    --body_bg_color:#202C36;
+    --main_bg_color:#2B3844;
+    --color:#fff;
+}
+
+.header{
+    color: var(--color);
+    background: var(--main_bg_color);
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443); */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.input{
+    
+    width: 480px;
+    background-image: url(../images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 15px;
+    padding: 20px;
+    padding-left: 50px;
+    
+}
+
+.box{
+    background-color: var(--main_bg_color);
+    color: var(--color);
+}
+
+.btn-changer{
+    color: var(--color);
+}
+
+@media only screen and (max-width: 426px ) {
+    
+    .header__title{
+        
+       
+        font-size: 14px;
+       
+        color: var(--color);
+
+
+    }
+
+   
+
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input{
+        max-width: 343px;
+        width: 343px;
+        margin: 0 auto;
+    }
+
+    .select{
+        padding-left: 28px;
+    }
+
+   
+}
